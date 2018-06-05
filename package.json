@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/_mocha",
+    "start": "node ./src/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/bbq191/koa-material-api/issues"
   },
-  "homepage": "https://github.com/bbq191/koa-material-api#readme"
+  "homepage": "https://github.com/bbq191/koa-material-api#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "knex": "^0.14.6",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.3"
+  }
 }
