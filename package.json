@@ -1,0 +1,19 @@
+{
+  "name": "restapi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bbq191/koa-material-api.git"
+  },
+  "author": "siyuan xu <xsiyuan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbq191/koa-material-api/issues"
+  },
+  "homepage": "https://github.com/bbq191/koa-material-api#readme"
+}
