@@ -26,7 +26,9 @@
     "knex": "^0.14.6",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.1",
+    "koa-passport": "^4.1.0",
     "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
     "pg": "^7.4.3"
   }
 }
