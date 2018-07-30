@@ -4,6 +4,7 @@ const session = require('koa-session');
 const passport = require('koa-passport');
 const indexRoutes = require('./routes/index');
 const movieRoutes = require('./routes/movies');
+const authRoutes = require('./routes/auth');
 
 const app = new Koa();
 const PORT = process.env.PORT || 3000;
@@ -23,7 +24,9 @@ app.use(passport.session());
 // routes
 app.use(indexRoutes.routes());
 app.use(movieRoutes.routes());
+app.use(authRoutes.routes());
 
+// server
 const server = app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
