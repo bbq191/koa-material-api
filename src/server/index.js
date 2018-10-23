@@ -5,13 +5,14 @@ const passport = require('koa-passport');
 const indexRoutes = require('./routes/index');
 const movieRoutes = require('./routes/movies');
 const authRoutes = require('./routes/auth');
+const RedisStore = require('koa-redis');
 
 const app = new Koa();
 const PORT = process.env.PORT || 3000;
 
 // sessions
 app.keys = ['super-secret-key'];
-app.use(session(app));
+app.use(session({store: new RedisStore()}, app));
 
 // body parser
 app.use(bodyParser());
